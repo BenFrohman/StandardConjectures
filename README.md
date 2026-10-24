@@ -23,3 +23,7 @@ Proof: apply the Hodge sentence to this one class Λ.
 - L = cup h is already algebraic; that is not B.
 
 See `StandardConjectures.lean`.
+
+## License
+
+Copyright (c) 2026 Benjamin Stanley Frohman. Licensed under the Apache License, Version 2.0 (see [`LICENSE`](LICENSE) and [`NOTICE`](NOTICE)).
