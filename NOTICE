@@ -1,10 +1,15 @@
-StandardConjectures
-Copyright 2026 Benjamin Stanley Frohman (ORCID: https://orcid.org/0009-0006-7068-3718)
-
-Author: Benjamin Stanley Frohman <frohmanbenjamin@gmail.com>
+StandardConjectures — Hodge on X x X Implies Grothendieck's Lefschetz Standard Conjecture B: Lean 4 Formalization
+Copyright 2026 Benjamin Stanley Frohman
 ORCID: https://orcid.org/0009-0006-7068-3718
 GitHub: https://github.com/BenFrohman/StandardConjectures
+Zenodo DOI: https://doi.org/10.5281/zenodo.23629482
+Origin Provenance: 2026-09-22 18:44:22 CDT (Git Initial Commit)
 
-This work includes software, formal specifications, and mathematical manuscripts
-developed by Benjamin Stanley Frohman and licensed under the Apache License,
-Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0). See LICENSE.
+This product includes software, formal Lean 4 proofs, and mathematical manuscripts developed by
+Benjamin Stanley Frohman (frohmanbenjamin@gmail.com).
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this work except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0

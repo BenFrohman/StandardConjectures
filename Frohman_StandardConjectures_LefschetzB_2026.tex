@@ -1,0 +1,40 @@
+% Copyright (c) 2026 Benjamin Stanley Frohman. All rights reserved.
+% Released under Apache 2.0 license as described in the file LICENSE.
+% Authors: Benjamin Stanley Frohman (ORCID: 0009-0006-7068-3718)
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{hyperref}
+
+\newtheorem{theorem}{Theorem}
+
+\title{\textbf{Hodge on $X \times X$ Implies Grothendieck's Lefschetz Standard Conjecture B: Lean 4 Formalization}}
+\author{Benjamin Stanley Frohman\\
+\small Independent Researcher \quad|\quad ORCID: \href{https://orcid.org/0009-0006-7068-3718}{0009-0006-7068-3718}\\
+\small \texttt{frohmanbenjamin@gmail.com}}
+\date{Origin Provenance: September 22, 2026 (18:44:22 CDT) \\ \small Repository: \texttt{BenFrohman/StandardConjectures} \quad|\quad Licensed under Apache-2.0}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We record a clean, zero-\texttt{sorry} Lean 4 module (\texttt{StandardConjectures.lean}) formalizing the classical implication between the rational Hodge conjecture on the self-product $X \times X$ of a smooth projective variety and Grothendieck's Lefschetz Standard Conjecture $B(X)$. Specifically, let $\Lambda$ denote the inverse Lefschetz operator $L^{-1}$ on primitive cohomology viewed as a correspondence class on $X \times X$. If $\Lambda$ is a rational Hodge class and the Hodge conjecture holds on $X \times X$ in the degree of $\Lambda$, then $\Lambda$ is algebraic (\texttt{LefschetzB $\Lambda$}). We explicitly separate this implication from the trivial algebraicity of the forward Lefschetz hyperplane cup operator $L = \smile h$ (\texttt{L\_is\_algebraic}) and document that neither Grothendieck's Conjecture B nor the Clay Hodge Conjecture is unconditionally discharged here.
+\end{abstract}
+
+\section{Formalized Theorem Statement}
+\begin{theorem}[\texttt{hodge\_on\_product\_implies\_lefschetz\_B}]
+Let $\Lambda : \mathrm{Class}$ represent the K\"unneth/correspondence class of the inverse Lefschetz operator on $X \times X$. Under the hypotheses $\mathrm{h\Lambda} : \mathrm{IsHodge}(\Lambda)$ and $\mathrm{hHC} : \forall \gamma,\, \mathrm{IsHodge}(\gamma) \to \mathrm{IsAlgebraic}(\gamma)$ on $X \times X$:
+\[
+\mathrm{IsHodge}(\Lambda) \;\wedge\; \mathrm{HodgeOnProduct} \implies \mathrm{LefschetzB}(\Lambda).
+\]
+\end{theorem}
+
+\section{Scope and Provenance}
+\begin{itemize}
+  \item \textbf{Origin Commit Timestamp:} Tuesday, September 22, 2026, 18:44:22 CDT (\texttt{2026-09-22T23:44:22Z}).
+  \item \textbf{Scope Separation:} $L = \smile h$ is already algebraic (hyperplane section); that is not Standard Conjecture B. Standard Conjectures A, C, and D and unconditional Hodge on $X \times X$ are not claimed.
+\end{itemize}
+
+\section*{License and Copyright}
+Copyright \copyright\ 2026 Benjamin Stanley Frohman. All rights reserved. Licensed under the Apache License, Version 2.0 (\url{http://www.apache.org/licenses/LICENSE-2.0}).
+\end{document}
