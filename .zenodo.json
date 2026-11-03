@@ -1,0 +1,32 @@
+{
+  "title": "Hodge on X x X Implies Grothendieck's Lefschetz Standard Conjecture B: Lean 4 Formalization",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "publication_date": "2026-09-22",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "doi": "10.5281/zenodo.23629482",
+  "creators": [
+    {
+      "name": "Frohman, Benjamin Stanley",
+      "affiliation": "Independent Researcher",
+      "orcid": "0009-0006-7068-3718"
+    }
+  ],
+  "keywords": [
+    "Grothendieck standard conjectures",
+    "Lefschetz standard conjecture B",
+    "Hodge conjecture",
+    "correspondences",
+    "Lean 4"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/BenFrohman/StandardConjectures",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "notes": "Origin Provenance: 2026-09-22 18:44:22 CDT (Git Initial Commit). Copyright (c) 2026 Benjamin Stanley Frohman. All rights reserved. Licensed under the Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0).",
+  "description": "<p>Zero-<code>sorry</code> Lean 4 module (<code>StandardConjectures.lean</code>) and companion note formalizing the implication <code>hodge_on_product_implies_lefschetz_B</code>: if the inverse Lefschetz operator <code>&Lambda; = L^{-1}</code> is a rational Hodge class on <code>X &times; X</code> and the rational Hodge conjecture holds on <code>X &times; X</code> in that degree, then <code>&Lambda;</code> is algebraic (Grothendieck's Lefschetz Standard Conjecture B).</p>"
+}

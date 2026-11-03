@@ -1,11 +1,14 @@
 cff-version: 1.2.0
-title: "StandardConjectures — Hodge on X×X implies Lefschetz B"
-message: "Cite as an implication theorem, not as a proof of Grothendieck B or Hodge."
-type: software
+message: "If you use this work, please cite it using the metadata below."
+title: "Hodge on X x X Implies Grothendieck's Lefschetz Standard Conjecture B: Lean 4 Formalization"
 authors:
-  - family-names: Frohman
-    given-names: Benjamin Stanley
-    alias: "@BenFrohman"
-repository-code: "https://github.com/BenFrohman/StandardConjectures"
-license: Apache-2.0
+  - family-names: "Frohman"
+    given-names: "Benjamin Stanley"
+    orcid: "https://orcid.org/0009-0006-7068-3718"
+    email: "frohmanbenjamin@gmail.com"
+version: "1.0.0"
+doi: "10.5281/zenodo.23629482"
 date-released: "2026-09-22"
+license: "Apache-2.0"
+repository-code: "https://github.com/BenFrohman/StandardConjectures"
+url: "https://doi.org/10.5281/zenodo.23629482"
