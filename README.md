@@ -15,7 +15,9 @@
 <!-- Copyright (c) 2026 Benjamin Stanley Frohman. Licensed under Apache-2.0. -->
 # StandardConjectures
 
-Author: Benjamin Stanley Frohman (@BenFrohman). Apache-2.0.
+**Author:** Benjamin Stanley Frohman (@BenFrohman)
+**Copyright:** (c) 2026 Benjamin Stanley Frohman.
+**License:** Apache-2.0. See `LICENSE` and `COPYRIGHT`.
 
 Sister of [HODGE](https://github.com/BenFrohman/HODGE). Not imported by Hodge.lean.
 
@@ -38,6 +40,15 @@ Proof: apply the Hodge sentence to this one class Λ.
 
 See `StandardConjectures.lean`.
 
+## Sister repositories
+
+- [HODGE](https://github.com/BenFrohman/HODGE)
+- [FermatPlanes](https://github.com/BenFrohman/FermatPlanes)
+- [NoetherLefschetz](https://github.com/BenFrohman/NoetherLefschetz)
+- [CubicFourfold](https://github.com/BenFrohman/CubicFourfold)
+- [TateConjecture](https://github.com/BenFrohman/TateConjecture)
+- [DerivedCategories](https://github.com/BenFrohman/DerivedCategories)
+- [HODGE-DISPROOF](https://github.com/BenFrohman/HODGE-DISPROOF)
 ## License
 
 Copyright (c) 2026 Benjamin Stanley Frohman. Licensed under the Apache License, Version 2.0 (see [`LICENSE`](LICENSE) and [`NOTICE`](NOTICE)).
