@@ -1,0 +1,72 @@
+% Copyright (c) 2026 Benjamin Stanley Frohman. All rights reserved.
+% Released under Apache 2.0 license as described in the file LICENSE.
+% Authors: Benjamin Stanley Frohman (ORCID: 0009-0006-7068-3718)
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{hyperref}
+
+\newtheorem{theorem}{Theorem}
+
+\title{\textbf{Hodge on $X \times X$ Implies Grothendieck's Lefschetz Standard Conjecture B: Lean 4 Formalization}}
+\author{Benjamin Stanley Frohman\\
+\small Independent Researcher \quad|\quad ORCID: \href{https://orcid.org/0009-0006-7068-3718}{0009-0006-7068-3718}\\
+\small \texttt{frohmanbenjamin@gmail.com}}
+\date{Origin Provenance: September 22, 2026 (18:44:22 CDT) \\ \small Repository: \texttt{BenFrohman/StandardConjectures} \quad|\quad Licensed under Apache-2.0}
+
+\usepackage{longtable}
+\usepackage{url}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We record a clean, zero-\texttt{sorry} Lean 4 module (\texttt{StandardConjectures.lean}) formalizing the classical implication between the rational Hodge conjecture on the self-product $X \times X$ of a smooth projective variety and Grothendieck's Lefschetz Standard Conjecture $B(X)$. Specifically, let $\Lambda$ denote the inverse Lefschetz operator $L^{-1}$ on primitive cohomology viewed as a correspondence class on $X \times X$. If $\Lambda$ is a rational Hodge class and the Hodge conjecture holds on $X \times X$ in the degree of $\Lambda$, then $\Lambda$ is algebraic (\texttt{LefschetzB $\Lambda$}). We explicitly separate this implication from the trivial algebraicity of the forward Lefschetz hyperplane cup operator $L = \smile h$ (\texttt{L\_is\_algebraic}) and document that neither Grothendieck's Conjecture B nor the Clay Hodge Conjecture is unconditionally discharged here.
+\end{abstract}
+
+\section{Formalized Theorem Statement}
+\begin{theorem}[\texttt{hodge\_on\_product\_implies\_lefschetz\_B}]
+Let $\Lambda : \mathrm{Class}$ represent the K\"unneth/correspondence class of the inverse Lefschetz operator on $X \times X$. Under the hypotheses $\mathrm{h\Lambda} : \mathrm{IsHodge}(\Lambda)$ and $\mathrm{hHC} : \forall \gamma,\, \mathrm{IsHodge}(\gamma) \to \mathrm{IsAlgebraic}(\gamma)$ on $X \times X$:
+\[
+\mathrm{IsHodge}(\Lambda) \;\wedge\; \mathrm{HodgeOnProduct} \implies \mathrm{LefschetzB}(\Lambda).
+\]
+\end{theorem}
+
+\section{Scope and Provenance}
+\begin{itemize}
+  \item \textbf{Origin Commit Timestamp:} Tuesday, September 22, 2026, 18:44:22 CDT (\texttt{2026-09-22T23:44:22Z}).
+  \item \textbf{Scope Separation:} $L = \smile h$ is already algebraic (hyperplane section); that is not Standard Conjecture B. Standard Conjectures A, C, and D and unconditional Hodge on $X \times X$ are not claimed.
+\end{itemize}
+
+\section*{License and Copyright}
+Copyright \copyright\ 2026 Benjamin Stanley Frohman. All rights reserved. Licensed under the Apache License, Version 2.0 (\url{http://www.apache.org/licenses/LICENSE-2.0}).
+\appendix
+\section{Verification certificate}\label{app:verification-certificate}
+
+The formal development was machine-checked as follows.
+
+{\raggedright
+\begin{itemize}
+\item Repository:\\ {\footnotesize\url{https://github.com/BenFrohman/StandardConjectures}}
+\item Verified commit:\\ {\footnotesize\texttt{04d0a4aaa8db09ef76219b4a7bd313522b838c7f}}
+\item Lean toolchain: \texttt{leanprover/lean4:v4.26.0}
+\item Mathlib: none (the development depends only on Lean core)
+\item Continuous integration run (build, axiom audit, \texttt{sorry}/\texttt{axiom} scan; passed):\\ {\footnotesize\url{https://github.com/BenFrohman/StandardConjectures/actions/runs/41568056923}}
+\item SHA-256 of the GitHub source tarball of the verified commit, downloaded twice with identical result:\\ {\footnotesize\url{https://github.com/BenFrohman/StandardConjectures/archive/04d0a4aaa8db09ef76219b4a7bd313522b838c7f.tar.gz}}\\
+{\footnotesize\texttt{4520f135d01775d090b28bc2619d9e2cf7e6ee9594054fe7b4dce0fcd117eec2}}
+\end{itemize}\par}
+
+The tarball hash refers to the verified commit rather than to a release tag, since a document cannot contain the hash of an archive that includes itself. The Lean sources are unchanged between that commit and the release tag.
+
+\textbf{The development contains no \texttt{sorry} and no user-declared axioms.} Every one of the 2 theorems and lemmas listed below depends only on Lean's standard axioms \texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound} (or on none). The table is the verbatim output of \texttt{lake env lean AxiomAudit.lean} (\texttt{\#print axioms}) on the verified commit.
+
+{\footnotesize
+\begin{longtable}{p{0.55\linewidth}p{0.38\linewidth}}
+\hline
+Lean declaration & \texttt{\#print axioms} \\
+\hline\endhead
+\path{StandardConjectures.hodge_on_product_implies_B_for_all_Hodge} & \texttt{(no axioms)} \\
+\path{StandardConjectures.hodge_on_product_implies_lefschetz_B} & \texttt{(no axioms)} \\
+\hline
+\end{longtable}}
+
+\end{document}
