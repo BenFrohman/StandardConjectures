@@ -52,3 +52,8 @@ See `StandardConjectures.lean`.
 ## License
 
 Copyright (c) 2026 Benjamin Stanley Frohman. Licensed under the Apache License, Version 2.0 (see [`LICENSE`](LICENSE) and [`NOTICE`](NOTICE)).
+
+## Zenodo archive
+
+- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23629481.svg)](https://doi.org/10.5281/zenodo.23629481) Hodge on X x X Implies Grothendieck's Lefschetz Standard Conjecture B: Lean 4 Formalization — all versions: [10.5281/zenodo.23629481](https://doi.org/10.5281/zenodo.23629481); latest version: [10.5281/zenodo.23629482](https://doi.org/10.5281/zenodo.23629482)
+- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23867581.svg)](https://doi.org/10.5281/zenodo.23867581) Hodge on X x X Implies Grothendieck's Lefschetz Standard Conjecture B: Lean 4 Formalization — all versions: [10.5281/zenodo.23867581](https://doi.org/10.5281/zenodo.23867581); latest version: [10.5281/zenodo.23905243](https://doi.org/10.5281/zenodo.23905243)
