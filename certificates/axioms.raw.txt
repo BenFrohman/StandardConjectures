@@ -1,0 +1,2 @@
+'StandardConjectures.hodge_on_product_implies_B_for_all_Hodge' does not depend on any axioms [module StandardConjectures]
+'StandardConjectures.hodge_on_product_implies_lefschetz_B' does not depend on any axioms [module StandardConjectures]
