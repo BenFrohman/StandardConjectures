@@ -15,6 +15,10 @@
 <!-- Copyright (c) 2026 Benjamin Stanley Frohman. Licensed under Apache-2.0. -->
 # StandardConjectures
 
+## Kernel certificate
+
+[certificates/CERTIFICATE.md](certificates/CERTIFICATE.md): commit `79158da`, `leanprover/lean4:v4.26.0`. `lake build` passes; the sorry/axiom scan finds 0 hits; **2 theorems depend only on `propext`, `Classical.choice`, `Quot.sound`**; 1 of 1 modules replayed through the kernel, 0 failures ([CI run](https://github.com/BenFrohman/StandardConjectures/actions/runs/43937982167)).
+
 **Author:** Benjamin Stanley Frohman (@BenFrohman)
 **Copyright:** (c) 2026 Benjamin Stanley Frohman.
 **License:** Apache-2.0. See `LICENSE` and `COPYRIGHT`.
