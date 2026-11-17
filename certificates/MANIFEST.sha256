@@ -1,0 +1,16 @@
+# Kernel certificate manifest
+# source commit: 432a8e8a85efa9be55151873631bebe8f35175c2
+# lean-toolchain: leanprover/lean4:v4.26.0
+# Mathlib: none (no Mathlib dependency)
+# CI run: https://github.com/BenFrohman/StandardConjectures/actions/runs/43955645232
+# rebuild: git clone https://github.com/BenFrohman/StandardConjectures.git && cd StandardConjectures && git checkout 432a8e8a85efa9be55151873631bebe8f35175c2 && lake build && python3 certificates/tools/sorry_scan.py && python3 certificates/tools/gen_audit.py /tmp/KernelCertificateAudit.lean /tmp/modules.txt && lake env lean /tmp/KernelCertificateAudit.lean > /tmp/axioms.raw.txt && python3 certificates/tools/check_audit.py /tmp/axioms.raw.txt | tail -n 1
+# verify: cd certificates && sha256sum -c MANIFEST.sha256
+264f1a0ad22945d6bc6ea22bfaf99752035d861d8a89ffbd5bf8f2e9dc7c57e5  CERTIFICATE.md
+f83272a2f8b5992c107dfa42f793b7efe70a4fbd15a2a8036989b60382139fa6  KernelCertificateAudit.lean.txt
+d7ce63363742e616a5c51de10a9d875c639e057728a683a8c1fbe0912887341e  axioms.raw.txt
+303c385cfa71c93f99d403e9a1169ef607dce5a1688a56e544c7076bb146ea95  axioms.txt
+e0fcaca0213279673f10fa70906236fcb2c8d064c3c0057d3318a89e2e75ff55  build.log
+978ba3b84884f09a9d806e3294678e3f3a8a0b7a3722788c4cd7fb379a65d00b  environment.txt
+8442e6798f8aeae2fdaf2870363e5bd1bdc9f8c7dcd9c8d85e84504b8d26578c  leanchecker.txt
+0940a1f8d760ea7bcad27bbbf2b1fc9ae50343021a75e1a3b553846b7307871d  modules.txt
+6449b8d6057c95fbe2771924993805383a0a6c2aa6145c8ea2143551864bd491  sorry-scan.txt
